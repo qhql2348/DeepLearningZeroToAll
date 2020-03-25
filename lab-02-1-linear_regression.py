@@ -15,7 +15,7 @@ b = tf.Variable(tf.random_normal([1]), name="bias")
 # Our hypothesis XW+b
 hypothesis = x_train * W + b
 
-# cost/loss function
+# cost/loss function 
 cost = tf.reduce_mean(tf.square(hypothesis - y_train))
 
 # optimizer
